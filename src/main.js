@@ -2,11 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from '@/router/router'
 import store from './store'
+import Vant from 'vant'
 
+import 'vant/lib/index.css'
 import '@/style/common.less'
 
 Vue.config.productionTip = false
-
+Vue.use(Vant)
 new Vue({
   router,
   store,
