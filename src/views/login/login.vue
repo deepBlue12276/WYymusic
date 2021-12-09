@@ -107,7 +107,7 @@ export default {
           sessionStorage.bindings = JSON.stringify(result.bindings)
           sessionStorage.profile = JSON.stringify(result.profile)
           sessionStorage.token = result.token
-          this.$router.push({name:'123'})
+          this.$router.push('/home')
         }
         else{
           this.$notify({
