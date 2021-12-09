@@ -33,6 +33,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    input {
+      font-size: 20px!important;
+    }
     .van-cell {
       background:inherit;
       width: 70%;
@@ -42,6 +45,21 @@
     .get-code {
       width: 80%;
       margin-left: 10%;
+    }
+    .van-password-input {
+      .van-password-input__security::before{
+        content: '验证码';
+        line-height: 50px;
+        font-size: 16px;
+        margin-right: 50px;
+      }
+      width: 62%;
+      margin-left: 19%;
+      background:initial;
+      margin-bottom: 50px;
+      .van-password-input__item{
+        background: initial;
+      }
     }
   }
 }

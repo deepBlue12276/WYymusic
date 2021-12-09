@@ -35,6 +35,9 @@
   display: flex;
   flex-direction: column;
 }
+.login-page .login-body input {
+  font-size: 20px!important;
+}
 .login-page .login-body .van-cell {
   background: inherit;
   width: 70%;
@@ -44,4 +47,19 @@
 .login-page .login-body .get-code {
   width: 80%;
   margin-left: 10%;
+}
+.login-page .login-body .van-password-input {
+  width: 62%;
+  margin-left: 19%;
+  background: initial;
+  margin-bottom: 50px;
+}
+.login-page .login-body .van-password-input .van-password-input__security::before {
+  content: '验证码';
+  line-height: 50px;
+  font-size: 16px;
+  margin-right: 50px;
+}
+.login-page .login-body .van-password-input .van-password-input__item {
+  background: initial;
 }
