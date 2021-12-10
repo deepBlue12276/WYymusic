@@ -9,5 +9,11 @@ export default {
     REFRESH_LOGIN: '/login/refresh',  //刷新登录
     GET_LOGIN_CODE: '/captcha/sent',  //获取验证码
     CHECK_REGIST: '/cellphone/existence/check',  //验证是否注册
+  },
+  home: {
+    HOME_BANNER: '/banner',  //首页banner
+    REC_SONG_LIST: '/recommend/resource',  //首页推荐歌单
+    REC_MV: '/personalized/mv',   //首页推荐MV
+    TOP_SONG: '/top/song',   //首页新歌速递
   }
 }

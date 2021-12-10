@@ -13,18 +13,18 @@
     </div>
     <ul class="tab">
       <li @click="changeTab('0')">
-              <img v-if="tabIndex == '0'" src="@/assets/img/tab/tab_home.png">
-              <img v-else src="@/assets/img/tab/noHome.png">
+              <van-icon name="wap-home" v-if="tabIndex == '0'" class="choosed"/>
+              <van-icon name="wap-home" v-else/>
               <p :class="tabIndex == '0'?'largeClass':''">首页</p>
             </li>
           <li @click="changeTab('1')">
-              <img v-if="tabIndex == '1'" src="@/assets/img/tab/tab_car.png">
-              <img v-else src="@/assets/img/tab/noCar.png">
+              <van-icon name="music" v-if="tabIndex == '1'" class="choosed"/>
+              <van-icon name="music" v-else/>
               <p :class="tabIndex == '1'?'largeClass':''">推荐</p>
           </li>
           <li @click="changeTab('2')">
-              <img v-if="tabIndex == '2'" src="@/assets/img/tab/tab_mine.png">
-              <img v-else src="@/assets/img/tab/noMine.png">
+              <van-icon name="manager" v-if="tabIndex == '2'" class="choosed"/>
+              <van-icon name="manager" v-else/>
               <p :class="tabIndex == '2'?'largeClass':''">我的</p>
           </li>
     </ul>
@@ -68,10 +68,14 @@ export default {
   .rotate {
     animation: rotate 5s infinite linear;
   }
+  .choosed {
+    color: rgb(16, 84, 243);
+  }
   .foot {
     position: fixed;
     bottom: 0;
     width: 100%;
+    background: #fff;
     .van-popup {
       height: 70%;
       background-image: linear-gradient(rgb(201, 230, 241),#fff);
@@ -110,9 +114,8 @@ export default {
       flex-direction: row;
       justify-content: space-around;
       li {
-        img {
-          width: 25px;
-          height: auto;
+        i {
+          font-size: 20px;
         }
       }
     }
